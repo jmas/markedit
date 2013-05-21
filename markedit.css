@@ -1,0 +1,67 @@
+.markedit {
+	background-color:#fff;
+	border-radius:5px;
+	min-height:300px;
+	overflow:hidden;
+	padding:30px 0;
+	cursor:text;
+}
+
+.markedit .paragraph {
+	overflow:hidden;
+	padding:0 15px;
+}
+
+.markedit .syntax {
+	float:left;
+	width:50px;
+	overflow:hidden;
+	text-align:right;
+	padding-top:5px;
+	font-size:90%;
+	font-family:monospace;
+	color:#999;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.markedit .formatted {
+	border-left:1px solid #eee;
+	padding-left:15px;
+	margin-left:70px;
+	overflow:hidden;
+	font-family:sans-serif;
+}
+
+.markedit .paragraph:hover .syntax,
+.markedit .paragraph.edit .syntax {
+	color:maroon;
+}
+
+.markedit .paragraph:hover,
+.markedit .paragraph.edit {
+	background-color:#f8f8f8;
+}
+
+.markedit .paragraph:hover .formatted,
+.markedit .paragraph.edit .formatted {
+	border-color:maroon;
+}
+
+
+.markedit .paragraph.edit .formatted textarea {
+	width:100%;
+	border:none;
+	font-family:monospace;
+	background-color:transparent;
+	padding:0;
+	margin:0;
+}
+
+.markedit .paragraph.edit .formatted textarea:focus {
+	outline:none;
+}
